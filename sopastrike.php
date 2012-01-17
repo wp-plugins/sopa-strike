@@ -8,7 +8,7 @@ Plugin Name: SOPA Strike
 Plugin URI: http://extrafuture.com/sopa-strike-wordpress-plugin/
 Description: On Wednesday, January 18th 2012 this plugin will redirect all users of your blog to the SOPA Strike page. It logs your website name and URL to be included on a roll call of supporters.
 Author: Phil Nelson
-Version: 1.1
+Version: 1.2
 Author URI: http://extrafuture.com
 */
 
