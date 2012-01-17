@@ -1,24 +1,28 @@
 <?php
 /**
  * @package Sopastrike
- * @version 1.2
+ * @version 1.2.1
  */
 /*
 Plugin Name: SOPA Strike
 Plugin URI: http://extrafuture.com/sopa-strike-wordpress-plugin/
 Description: On Wednesday, January 18th 2012 this plugin will redirect all users of your blog to the SOPA Strike page. It logs your website name and URL to be included on a roll call of supporters.
 Author: Phil Nelson
-Version: 1.2
+Version: 1.2.1
 Author URI: http://extrafuture.com
 */
 
 // Add our JS
-function sopastrike() {
+function sopastrike()
+{
 
-header("HTTP/1.1 503 Service Unavailable");
-header("Location: http://sopastrike.com/strike");
-
-exit;
+	if(time() > 1326873600 && time() < 1326916800)
+	{
+		header("HTTP/1.1 503 Service Unavailable");
+		header("Location: http://sopastrike.com/strike");
+		
+		exit;
+	}
 }
 
 function phone_home()

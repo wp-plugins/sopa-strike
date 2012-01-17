@@ -30,6 +30,10 @@ Manual Installation:
 
 == Changelog ==
 
+=1.2.1=
+
+* Added intelligent check for time.
+
 =1.2=
 
 * Changed redirect to a 503 "Service Unavailable"
