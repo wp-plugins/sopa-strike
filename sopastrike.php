@@ -1,7 +1,7 @@
 <?php
 /**
  * @package Sopastrike
- * @version 1.1
+ * @version 1.2
  */
 /*
 Plugin Name: SOPA Strike
@@ -14,9 +14,11 @@ Author URI: http://extrafuture.com
 
 // Add our JS
 function sopastrike() {
-	echo "<script>
-var a=new Date;if(18==a.getDate()&&0==a.getMonth()&&2012==a.getFullYear())window.location='http://sopastrike.com/strike';
-</script>	";
+
+header("HTTP/1.1 503 Service Unavailable");
+header("Location: http://sopastrike.com/strike");
+
+exit;
 }
 
 function phone_home()
@@ -34,6 +36,6 @@ function phone_home()
 }
 
 register_activation_hook( __FILE__, 'phone_home' );
-add_action( 'wp_head', 'sopastrike' );
+add_action( 'muplugins_loaded', 'sopastrike' );
 
 ?>

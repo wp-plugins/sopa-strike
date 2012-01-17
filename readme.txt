@@ -30,5 +30,9 @@ Manual Installation:
 
 == Changelog ==
 
+=1.2=
+
+* Changed redirect to a 503 "Service Unavailable"
+
 = 1.0 =
 * First version!
