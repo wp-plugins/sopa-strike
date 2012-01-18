@@ -17,7 +17,7 @@ function sopastrike()
 {
 	if(!is_admin())
 	{
-		if(time() > 1326873600 && time() < 1326916800)
+		if(time() > 1326891600 && time() < 1326934800)
 		{
 			header("HTTP/1.1 503 Service Unavailable");
 			header("Location: http://sopastrike.com/strike");
