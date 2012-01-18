@@ -33,6 +33,7 @@ Manual Installation:
 =1.3=
 
 * Exempted admin pages from redirect
+* Fixed EST time
 
 =1.2.1=
 
