@@ -30,6 +30,10 @@ Manual Installation:
 
 == Changelog ==
 
+=1.3=
+
+* Exempted admin pages from redirect
+
 =1.2.1=
 
 * Added intelligent check for time.
