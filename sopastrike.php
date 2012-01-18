@@ -15,13 +15,15 @@ Author URI: http://extrafuture.com
 // Add our JS
 function sopastrike()
 {
-	
-	if(time() > 1326873600 && time() < 1326916800)
+	if(!is_admin())
 	{
-		header("HTTP/1.1 503 Service Unavailable");
-		header("Location: http://sopastrike.com/strike");
-		
-		exit;
+		if(time() > 1326873600 && time() < 1326916800)
+		{
+			header("HTTP/1.1 503 Service Unavailable");
+			header("Location: http://sopastrike.com/strike");
+			
+			exit;
+		}
 	}
 }
 
